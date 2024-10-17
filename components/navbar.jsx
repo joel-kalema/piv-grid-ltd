@@ -28,7 +28,7 @@ export const navData = [
     }
 ]
 
-const Nav = () => {
+const Navbar = () => {
     const [active, setActive] = useState('nav_close');
     const [fix, setFix] = useState(false)
 
@@ -49,31 +49,26 @@ const Nav = () => {
     }
 
     return (
-        <div className={
-            fix ?
-                'flex transition duration-400 ease-in-out fixed top-0 w-[100%] justify-between items-center px-6 py-4 md:px-28 md:py-2 z-50 bg-[#fff] text-[#231f20] shadow-lg'
-                : 'flex transition duration-400 ease-in-out fixed top-0 w-full justify-between items-center px-6 py-4 md:px-28 md:py-2 z-50 text-[#fff]'
-        }>
+        <div className='flex transition duration-400 ease-in-out fixed top-0 w-full justify-between items-center px-6 py-4 md:px-28 md:py-2 z-50 text-[#000] bg-[#fff]'>
             <Link href='/'>
-                <Image src={fix ? '/logo.png' : (pathname == '/' && !fix) ? '/logo.png' : '/logo.png'} height={80} width={100} alt="logo" className='md:w-10 lg:w-20' />
+                <Image src='/logo.png' height={80} width={100} alt="logo" className='md:w-10 lg:w-20' />
             </Link>
-            <div onClick={navToggle} className={fix ? 'lg:hidden text-xl text-[#000]' :(pathname == '/' && !fix) ? 'lg:hidden text-xl text-[#fff]' : 'lg:hidden text-xl text-[#000]'}>
+            <div onClick={navToggle} className='lg:hidden text-xl text-[#000]'>
                 <CgMenuRight />
             </div>
-            <div className='w-[25%] hidden lg:flex justify-between items-center'>
+            <div className='w-[25%] hidden lg:flex gap-10 items-center'>
                 {navData.map((nav) => (
                     <Link key={nav.id} href={nav.link}
                         className={
                             pathname === nav.link
-                                ? 'text-[#2a9df4] rounded-3xl'
-                                : 'hover:text-[#2a9df4] text-[#2d2d2d] rounded-3xl transition-all duration-500'
+                                ? 'text-[#2a9df4] font-extrabold pb-2 border-b-4 border-b-[#2a9df4]'
+                                : 'hover:text-[#2a9df4] pb-2 text-[#0f2f48] font-extrabold transition-all duration-500'
                         }
                     >{nav.title}</Link>
                 ))}
             </div>
             <div className="hidden gap-4 lg:flex items-center">
-                <Link href="mailto:Julien@gmail.com" className="">Julien@gmail.com</Link>
-                <Link href="/contact" className="bg-[#2a9df4] text-white px-6 py-2 rounded-3xl hover:shadow-xl">
+                <Link href="/contact" className="text-[#0f2f48] hover:text-[#2a9df4]">
                     Contacter
                 </Link>
             </div>
@@ -100,4 +95,4 @@ const Nav = () => {
     )
 }
 
-export default Nav
+export default Navbar

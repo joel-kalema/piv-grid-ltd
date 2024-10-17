@@ -29,10 +29,10 @@ export default function Presentation() {
             <div className="p-4 lg:p-40">
                 <div className="flex flex-col lg:flex-row gap-10 mb-10">
                     <h1 className="text-3xl lg:text-5xl font-extrabold w-full lg:w-3/6">Our Commitment to You</h1>
-                    <p className="w-full lg:w-3/6">We are dedicated to providing high-quality solar energy solutions that 
-                    are easy to install, maintain, and use. From helping you choose the best solar system for your needs 
-                    to providing ongoing support, we are with you every step of the way. Our team of energy experts is 
-                    always on hand to answer questions and provide guidance, ensuring your transition to solar power is seamless and stress-free.</p>
+                    <p className="w-full lg:w-3/6">We are dedicated to providing high-quality solar energy solutions that
+                        are easy to install, maintain, and use. From helping you choose the best solar system for your needs
+                        to providing ongoing support, we are with you every step of the way. Our team of energy experts is
+                        always on hand to answer questions and provide guidance, ensuring your transition to solar power is seamless and stress-free.</p>
                 </div>
             </div>
 
@@ -43,7 +43,7 @@ export default function Presentation() {
                     <div className="h-[.5rem] w-[10rem] bg-[#ffffff0d] rounded-md"></div>
                 </div>
                 <h1 className="text-5xl mb-20 w-5/6 mx-auto">Why Choose Solar Energy?</h1>
-                <div className="w-5/6 mx-auto gap-10 flex flex-wrap justify-between mb-20">
+                <div className="w-5/6 mx-auto gap-10 flex flex-wrap justify-between mb-40">
                     {Why.map((item) => (
                         <div className="w-[48%] bg-[#ffffff0d] p-10 rounded-3xl">
                             <h1 className="text-xl font-bold mb-4">{item.title}</h1>
@@ -52,7 +52,7 @@ export default function Presentation() {
                     ))}
                 </div>
 
-                <div className="hidden lg:block h-[20rem] overflow-hidden w-5/6 mx-auto relative rounded-xl mb-20">
+                <div className="hidden lg:block h-[20rem] overflow-hidden w-5/6 mx-auto relative rounded-xl mb-40 mt-20">
                     <Image src="/solar2.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
                     <div className="absolute top-0 w-[100%] h-[100%] bg-[#2121217b] flex items-center">
                         <p className="text-6xl w-3/4 mx-auto text-center">Our Solutions Reach 100% Renewable</p>
@@ -75,15 +75,15 @@ export default function Presentation() {
                     </div>
 
                     <div className="flex gap-20 w-5/6 mx-auto mt-20 justify-between">
-                            <div className="h-[50vh] lg:w-4/6 overflow-hidden relative rounded-l-[7rem] rounded-b-[7rem]">
-                                <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
-                            </div>
-                            <div className="lg:w-2/6 lg:p-6">
-                                <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Love What We Do</p>
-                                <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Truly Care</p>
-                                <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] shadow-[#fe6e004e] shadow-md rounded-xl mb-10">Our Promise to You</p>
-                                <p className="text-xs">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
-                            </div>
+                        <div className="h-[50vh] lg:w-4/6 overflow-hidden relative rounded-l-[7rem] rounded-b-[7rem]">
+                            <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                        </div>
+                        <div className="lg:w-2/6 lg:p-6">
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Love What We Do</p>
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Truly Care</p>
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] shadow-[#fe6e004e] shadow-md rounded-xl mb-10">Our Promise to You</p>
+                            <p className="text-xs">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
+                        </div>
                     </div>
                 </div>
             </div>

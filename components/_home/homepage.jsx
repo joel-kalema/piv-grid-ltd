@@ -38,9 +38,9 @@ export default function Homepage() {
             </div>
           )}
         >
-          <Image src="/solar1.jpg"
-            layout="fill" objectFit="cover" alt="bay" quality={90} />
           <Image src="/solar2.jpg"
+            layout="fill" objectFit="cover" alt="bay" quality={90} />
+            <Image src="/solar1.JPG"
             layout="fill" objectFit="cover" alt="bay" quality={90} />
           <Image src="/solar3.jpg"
             layout="fill" objectFit="cover" alt="bay" quality={90} />

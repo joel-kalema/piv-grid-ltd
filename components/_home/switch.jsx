@@ -46,6 +46,28 @@ export default function Switch() {
                     <Link href="#" className="text-[#FE6F00] font-bold flex items-center gap-2 hover:gap-4 hover:font-extrabold transition duration-300">Contact <FaArrowRightLong /></Link>
                 </div>
             </div>
+
+            <div className="mt-40">
+                <div className="mx-auto w-1/3 my-20">
+                    <div className="w-5/6 mx-auto flex gap-4 mb-5">
+                        <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
+                        <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
+                        <div className="h-[.5rem] w-[10rem] bg-[#010f4344] rounded-md"></div>
+                    </div>
+                    <h1 className="text-5xl w-5/6 mb-20 mx-auto">Our Partners</h1>
+                </div>
+                <div className="flex gap-10 justify-center">
+                    <div className="h-[12vh] w-1/5 relative">
+                        <Image src="/logos/isuzu.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                    </div>
+                    <div className="h-[10vh] w-1/5 relative">
+                        <Image src="/logos/reg.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                    </div>
+                    <div className=" w-1/5 relative">
+                        <Image src="/logos/ur.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                    </div>
+                </div>
+            </div>
         </div>
     );
 }

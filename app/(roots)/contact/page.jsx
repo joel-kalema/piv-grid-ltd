@@ -10,6 +10,8 @@ import { Textarea } from "@material-tailwind/react";
 import Image from "next/image";
 import { BsPatchCheckFill } from "react-icons/bs";
 import Link from 'next/link';
+import { IoLocation, IoCall } from "react-icons/io5";
+import { IoMdMail } from "react-icons/io";
 
 const Contact = () => {
     const [open, setOpen] = React.useState(false);
@@ -42,20 +44,42 @@ const Contact = () => {
 
     return (
         <div className="">
-            <div className="pt-40 w-5/6 mx-auto">
-                <h1 className="text-4xl font-extrabold my-10 w-3/4 text-center mx-auto">Demander des informations pour acheter un logement avec QAVAH Group</h1>
-                <div className="flex gap-5 items-center">
-                    <div className="w-2/4 min-h-[60dvh] relative -mr-10 rounded-3xl p-10">
-                        <Image src="/avis.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+            <div className="py-40 w-5/6 mx-auto">
+                <div className="w-5/6 mx-auto flex gap-4 mb-5">
+                    <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
+                    <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
+                    <div className="h-[.5rem] w-[10rem] bg-[#c5c5c53e] rounded-md"></div>
+                </div>
+                <h1 className="text-5xl mb-20 w-5/6 mx-auto">Ask informations with PV-GRID POWER SYSTEM Ltd</h1>
+                <div className="flex gap-5 w-5/6 mx-auto">
+                    <div className="w-3/4 min-h-[60dvh] relative overflow-hidden rounded-3xl p-10">
+                        <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                        <div className='absolute flex gap-10 bottom-10'>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                                <IoLocation className='text-[#FE6F00] text-2xl mb-2'/>
+                                <h1 className='font-extrabold mb-2'>Our Address</h1>
+                                <p>Gitega,KN 104</p>
+                            </div>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                                <IoMdMail className='text-[#FE6F00] text-2xl mb-2'/>
+                                <h1 className='font-extrabold mb-2'>Email Us</h1>
+                                <p>rlsgltd22@gmail.com</p>
+                            </div>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                                <IoCall className='text-[#FE6F00] text-2xl mb-2' />
+                                <h1 className='font-extrabold mb-2'>Call Us</h1>
+                                <p>+250 783008373</p>
+                            </div>
+                        </div>
                     </div>
-                    <div className="flex w-2/4 ">
-                        <Card color="transparent" bclassName="-ml-10" shadow={false}>
-                            <form className="mt-8 mb-2 w-80 max-w-screen-lg sm:w-96 bg-white rounded-xl p-4 shadow-md " onSubmit={(e) => handleSubmit(e)}>
+                    <div className="flex w-1/4 ">
+                        <Card color="transparent" bclassName="" shadow={false}>
+                            <form className="mt-8 mb-2 w-96 max-w-screen-lg bg-white rounded-xl p-4 shadow-md " onSubmit={(e) => handleSubmit(e)}>
                                 <div className="mb-1 flex flex-col gap-6">
                                     <Input variant="outlined" label="Prénom" placeholder="Prénom" type="text" name="Prenom" />
                                     <Input variant="outlined" label="Nom" placeholder="Nom" type="text" name="Nom" />
                                     <Input variant="outlined" label="E-mail" placeholder="E-mail" type="mail" name="Email" />
-                                    <Input variant="outlined" label="+243 xxx xxx xxx" placeholder="Téléphone" type="number" name="Numero" />
+                                    <Input variant="outlined" label="+250 xxx xxx xxx" placeholder="Téléphone" type="number" name="Numero" />
                                     <Textarea label="Message" name="Message" />
                                 </div>
 
