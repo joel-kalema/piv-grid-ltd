@@ -15,27 +15,16 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
     return (
-        <div className="bg-[#2c2c2c] text-[#fff] pt-12 rounded-t-3xl lg:rounded-[2rem] relative z-20 lg:m-8 p-4">
-            <div className="lg:w-5/6 mx-auto pb-14 lg:flex justify-between items-center">
-                <div className="mb-6 lg:mb-0">
-                    <h1 className="text-4xl lg:text-6xl mb-4">Prêt à travailler avec nous?</h1>
-                    <p>Bénéficiez d&lsquo;un service client de premier ordre et laissez-nous vous guider dans votre parcours immobilier</p>
-                </div>
-                <Link href="/contact" className="w-[4rem] lg:w-[7rem] h-[4rem] lg:h-[7rem] bg-[#ad8954] rounded-[50%] flex justify-center items-center hover:rotate-45 transition duration-300">
-                    <div className="w-[3rem] lg:w-[5rem] border border-[#fff] cursor-pointer border-dashed h-[3rem] lg:h-[5rem] bg-[#ad8954] rounded-[50%] flex justify-center items-center">
-                        <FiArrowUpRight className="text-3xl lg:text-5xl text-[#fff]" />
-                    </div>
-                </Link>
-            </div>
-            <footer className="relative w-full">
+        <div className=" pt-12 rounded-t-3xl lg:rounded-[2rem] relative z-20 lg:m-8 p-4">
+            <footer className="relative w-full bg-[#2c2c2c] rounded-3xl text-[#fff]">
                 <div className="mx-auto w-full max-w-7xl lg:px-8">
                     <div className="lg:flex justify-between items-center gap-4 py-10 border-t border-[#6c6c6c]">
                         <div className="2/4  mb-12 lg:mb-0">
-                            <Image src='/logo02.png' height={60} width={200} alt="Eleka logo" className='md:w-14 lg:w-40 mb-4' />
+                            <Image src='/logo.png' height={60} width={200} alt="Eleka logo" className='md:w-14 lg:w-40 mb-4' />
                             <div>
-                                <p className="text-sm w-3/4 mb-6 text-[#a4a4a4]">Un agent immobilier vous contactera dans les meilleurs délais</p>
-                                <p className="lg:text-sm w-2/4 mb-1 flex items-center gap-2"><FaPhone className="text-[#ad8954] text-2xl"/> +243981444440</p>
-                                <Link href="mailto:contact@qavahgroup.com" className="lg:text-sm lg:w-2/4 mb-2 flex items-center gap-2"><IoMdMail className="text-[#ad8954] text-2xl"/> contact@qavahgroup.com</Link>
+                                <p className="text-sm w-3/4 mb-6 text-[#a4a4a4]">Power Your Life with Clean Energy – Discover the Benefits of Solar Today!</p>
+                                <p className="lg:text-sm w-2/4 mb-1 flex items-center gap-2"><FaPhone className="text-[#ad8954] text-2xl"/>+250 783008373</p>
+                                <Link href="mailto:rlsgltd22@gmail.com" className="lg:text-sm lg:w-2/4 mb-2 flex items-center gap-2"><IoMdMail className="text-[#ad8954] text-2xl"/>rlsgltd22@gmail.com</Link>
                                 <div className=" flex border border-[#6c6c6c] p-2 rounded-md">
                                     <div className="w-4/6 text-[#868686] py-1">Écrivez votre email ici</div>
                                     <div className="w-2/6 bg-[#ad8954] rounded-md py-1 px-2 flex justify-between items-center">
@@ -49,12 +38,8 @@ export default function Footer() {
                             <div className="flex lg:w-3/4 gap-5">
                                 <MdLocationOn className="text-6xl text-[#ad8954]"/>
                                 <div>
-                                    <h1 className=" font-extrabold mb-1">KINSHASA :</h1>
-                                    <p className="text-sm text-[#868686] mb-2">22,Ave Tombalbaye Kinshasa-Gombe | Réf : Immeuble Otantika, en face du Magasin Regal</p>
-                                    <h1 className=" font-extrabold mb-1">LUBUMBASHI :</h1>
-                                    <p className="text-sm text-[#868686] mb-2">1572, Ave Kasavubu, C/LubumbashI Q/Makutano Référence En face de l’hôtel Mota </p>
-                                    <h1 className=" font-extrabold mb-1">KOLWEZI :</h1>
-                                    <p className="text-sm text-[#868686]">529,Ave Kajama,Kolwezi, Lualaba</p>
+                                    <h1 className=" font-extrabold mb-1">KIGALI :</h1>
+                                    <p className="text-sm text-[#868686] mb-2">Gitega,KN 104</p>
                                 </div>
                             </div>
                         </div>

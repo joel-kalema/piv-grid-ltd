@@ -5,6 +5,7 @@ import Gallery from './_components/gallery';
 import Link from "next/link";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 import { GiTrophyCup } from "react-icons/gi";
+import Contact from "@/components/_home/contact";
 
 const Why = [
     {
@@ -69,26 +70,26 @@ export default function Louer() {
                 </div>
             </div>
             <div className="my-20">
-                <div className="w-[5rem] h-[5rem] border mx-auto rounded-[50%] flex justify-center items-center shadow-md bg-[#fff] relative z-20">
+                <div className="w-[5rem] h-[5rem] border mx-auto rounded-[50%] flex justify-center items-center shadow-md bg-[#fff] relative z-20 ">
                     <GiTrophyCup className=" drop-shadow-lg text-4xl" />
                 </div>
                 <p className="italic text-xl text-center w-1/2 mx-auto border-t pt-6 -mt-4 ">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
             </div>
 
             <div className="flex w-3/4 mx-auto gap-10 my-28">
-                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6">
+                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6 transition duration-300">
                     <p className="bg-[#ffffff5f] shadow-md py-2 px-6 rounded-lg inline-block font-extrabold text-2xl mb-2">1</p>
                     <h1 className="text-2xl font-extrabold my-2">We Love What We Do</h1>
                     <p className="text-sm">Our builders come to work smiling and ready to build your dream. They have a passion for remodeling and are qualified to work on your design.</p>
                 </div>
 
-                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6">
+                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6 transition duration-300">
                     <p className="bg-[#ffffff5f] shadow-md py-2 px-6 rounded-lg inline-block font-extrabold text-2xl mb-2">2</p>
                     <h1 className="text-2xl font-extrabold my-2">We Truly Care</h1>
                     <p className="text-sm">The right care can ensure the success of any remodeling effort. We believe in partnership & trust and work with you to create a great space.</p>
                 </div>
 
-                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6">
+                <div className="bg-[#fe6e0020] rounded-2xl shadow-md hover:shadow-2xl hover:bg-[#FE6F00] hover:text-[#fff] border p-6 transition duration-300">
                     <p className="bg-[#ffffff5f] shadow-md py-2 px-6 rounded-lg inline-block font-extrabold text-2xl mb-2">3</p>
                     <h1 className="text-2xl font-extrabold my-2">Our Promise to You</h1>
                     <p className="text-sm">We promise to always provide value and outstanding service, regardless of your lifestyle need, design preference, or budget constraint.</p>
@@ -100,58 +101,8 @@ export default function Louer() {
             </div>
 
             <Gallery />
-
-            <div className="bg-[#0b2035] text-[#fff] pt-28 pb-14 rounded-[4rem]">
-                <div className="w-5/6 mx-auto flex gap-4 mb-5">
-                    <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
-                    <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
-                    <div className="h-[.5rem] w-[10rem] bg-[#ffffff0d] rounded-md"></div>
-                </div>
-                <h1 className="text-5xl mb-20 w-5/6 mx-auto">Why Choose Solar Energy?</h1>
-                <div className="w-5/6 mx-auto gap-10 flex flex-wrap justify-between mb-40">
-                    {Why.map((item) => (
-                        <div className="w-[48%] bg-[#ffffff0d] p-10 rounded-3xl">
-                            <h1 className="text-xl font-bold mb-4">{item.title}</h1>
-                            <p className="text-[#ffffffc6]">{item.detail}</p>
-                        </div>
-                    ))}
-                </div>
-
-                <div className="hidden lg:block h-[20rem] overflow-hidden w-5/6 mx-auto relative rounded-xl mb-40 mt-20">
-                    <Image src="/solar2.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
-                    <div className="absolute top-0 w-[100%] h-[100%] bg-[#2121217b] flex items-center">
-                        <p className="text-6xl w-3/4 mx-auto text-center">Our Solutions Reach 100% Renewable</p>
-                    </div>
-                </div>
-
-                <div className="bg-[#fff] p-20 mx-10 rounded-[3rem] text-[#212121]">
-                    <div className="flex pb-10 border-b border-[#868686]">
-                        <div className="w-2/4">
-                            <p className="text-[#FE6F00] font-extrabold">About</p>
-                            <h1 className="text-4xl font-extrabold mb-4">PV-GRID POWER SYSTEM Ltd</h1>
-                            <p className="w-5/6">We can take your electrical and lighting ideas from concept to reality.</p>
-                        </div>
-                        <div className="w-2/4">
-                            <h2 className="mb-6">We work on residential and commercial developments for contractors, developers and property managers across RWANDA. We can help with:</h2>
-                            <p className="flex gap-2 mb-2"><IoIosCheckmarkCircle className="text-xl mt-1" /> Energising sites and de-energising sites ready for demolition.</p>
-                            <p className="flex gap-2 mb-2"><IoIosCheckmarkCircle className="text-xl mt-1" /> Arranging the installation of electricity, gas for residential and commercial properties.</p>
-                            <p className="flex gap-2 mb-2"><IoIosCheckmarkCircle className="text-4xl -mt-1" /> For us, a clean energy project can not fail. For us the mature engineers allow existing systems to be upgraded and refurbished in the shortest time possible.</p>
-                        </div>
-                    </div>
-
-                    <div className="flex gap-20 w-5/6 mx-auto mt-20 justify-between">
-                        <div className="h-[50vh] lg:w-4/6 overflow-hidden relative rounded-l-[7rem] rounded-b-[7rem]">
-                            <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
-                        </div>
-                        <div className="lg:w-2/6 lg:p-6">
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Love What We Do</p>
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Truly Care</p>
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] shadow-[#fe6e004e] shadow-md rounded-xl mb-10">Our Promise to You</p>
-                            <p className="text-xs">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
+            
+            <Contact />
         </div>
     );
 }

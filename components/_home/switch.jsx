@@ -56,7 +56,9 @@ export default function Switch() {
                     </div>
                     <h1 className="text-5xl w-5/6 mb-20 mx-auto">Our Partners</h1>
                 </div>
-                <div className="flex gap-10 justify-center">
+
+                
+                <div className="flex gap-8 justify-center">
                     <div className="h-[12vh] w-1/5 relative">
                         <Image src="/logos/isuzu.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
                     </div>
@@ -65,6 +67,9 @@ export default function Switch() {
                     </div>
                     <div className=" w-1/5 relative">
                         <Image src="/logos/ur.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                    </div>
+                    <div className=" w-1/5 relative">
+                        <Image src="/logos/grid.png" layout="fill" objectFit="cover" alt="bay" quality={100} />
                     </div>
                 </div>
             </div>

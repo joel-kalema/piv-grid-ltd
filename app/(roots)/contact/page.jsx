@@ -54,18 +54,18 @@ const Contact = () => {
                 <div className="flex gap-5 w-5/6 mx-auto">
                     <div className="w-3/4 min-h-[60dvh] relative overflow-hidden rounded-3xl p-10">
                         <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
-                        <div className='absolute flex gap-10 bottom-10'>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                        <div className='absolute flex gap-10 bottom-10 w-5/6'>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
                                 <IoLocation className='text-[#FE6F00] text-2xl mb-2'/>
                                 <h1 className='font-extrabold mb-2'>Our Address</h1>
                                 <p>Gitega,KN 104</p>
                             </div>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
                                 <IoMdMail className='text-[#FE6F00] text-2xl mb-2'/>
                                 <h1 className='font-extrabold mb-2'>Email Us</h1>
                                 <p>rlsgltd22@gmail.com</p>
                             </div>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md'>
+                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
                                 <IoCall className='text-[#FE6F00] text-2xl mb-2' />
                                 <h1 className='font-extrabold mb-2'>Call Us</h1>
                                 <p>+250 783008373</p>
