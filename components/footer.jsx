@@ -15,19 +15,19 @@ const currentYear = new Date().getFullYear();
 
 export default function Footer() {
     return (
-        <div className=" pt-12 rounded-t-3xl lg:rounded-[2rem] relative z-20 lg:m-8 p-4">
-            <footer className="relative w-full bg-[#2c2c2c] rounded-3xl text-[#fff]">
+        <div className="lg:rounded-[2rem] relative z-20">
+            <footer className="relative w-full bg-[#161616] text-[#d0d0d0]">
                 <div className="mx-auto w-full max-w-7xl lg:px-8">
                     <div className="lg:flex justify-between items-center gap-4 py-10 border-t border-[#6c6c6c]">
                         <div className="2/4  mb-12 lg:mb-0">
                             <Image src='/logo.png' height={60} width={200} alt="Eleka logo" className='md:w-14 lg:w-40 mb-4' />
                             <div>
-                                <p className="text-sm w-3/4 mb-6 text-[#a4a4a4]">Power Your Life with Clean Energy – Discover the Benefits of Solar Today!</p>
-                                <p className="lg:text-sm w-2/4 mb-1 flex items-center gap-2"><FaPhone className="text-[#ad8954] text-2xl"/>+250 783008373</p>
-                                <Link href="mailto:rlsgltd22@gmail.com" className="lg:text-sm lg:w-2/4 mb-2 flex items-center gap-2"><IoMdMail className="text-[#ad8954] text-2xl"/>rlsgltd22@gmail.com</Link>
-                                <div className=" flex border border-[#6c6c6c] p-2 rounded-md">
-                                    <div className="w-4/6 text-[#868686] py-1">Écrivez votre email ici</div>
-                                    <div className="w-2/6 bg-[#ad8954] rounded-md py-1 px-2 flex justify-between items-center">
+                                <p className="text-sm w-3/4 mb-6 ">Power Your Life with Clean Energy – Discover the Benefits of Solar Today!</p>
+                                <p className="lg:text-sm w-2/4 mb-1 flex items-center gap-2"><FaPhone className="text-[#2a9df4] text-2xl"/>+250 783008373</p>
+                                <Link href="mailto:rlsgltd22@gmail.com" className="lg:text-sm lg:w-2/4 mb-2 flex items-center gap-2"><IoMdMail className="text-[#2a9df4] text-2xl"/>rlsgltd22@gmail.com</Link>
+                                <div className=" flex border border-[#d0d0d04d] p-2 rounded-md">
+                                    <div className="w-4/6 py-1">Écrivez votre email ici</div>
+                                    <div className="w-2/6 bg-[#2a9df4] rounded-md py-1 px-2 flex justify-between items-center">
                                         Soumettre <AiOutlineLogin />
                                     </div>
                                 </div>
@@ -36,7 +36,7 @@ export default function Footer() {
 
                         <div className="flex lg:w-2/4 justify-between gap-4">
                             <div className="flex lg:w-3/4 gap-5">
-                                <MdLocationOn className="text-6xl text-[#ad8954]"/>
+                                <MdLocationOn className="text-6xl text-[#2a9df4]"/>
                                 <div>
                                     <h1 className=" font-extrabold mb-1">KIGALI :</h1>
                                     <p className="text-sm text-[#868686] mb-2">Gitega,KN 104</p>

@@ -16,7 +16,7 @@ export default function Homepage() {
           <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
         </div>
       </div>
-      <div className="w-2/5 h-[80vh] relative">
+      <div className="w-2/5 h-[80vh] relative flex">
         <Carousel
           className="rounded-xl w-[100%]"
           transition={{ duration: 1 }}
@@ -38,16 +38,22 @@ export default function Homepage() {
             </div>
           )}
         >
-          <Image src="/solar2.jpg"
-            layout="fill" objectFit="cover" alt="bay" quality={90} />
-            <Image src="/solar1.JPG"
-            layout="fill" objectFit="cover" alt="bay" quality={90} />
-          <Image src="/solar3.jpg"
-            layout="fill" objectFit="cover" alt="bay" quality={90} />
+          <div className="h-full w-full">
+            <Image src="/solar4.jpg" layout="fill" objectFit="cover" alt="joel" quality={90} />
+          </div>
+          <div className="h-full w-full">
+            <Image src="/joel.jpg" layout="fill" objectFit="cover" alt="joel" quality={90} />
+          </div>
+          <div className="h-full w-full">
+            <Image src="/julien.jpg" layout="fill" objectFit="cover" alt="bay" quality={90} />
+          </div>
+          <div className="h-full w-full">
+            <Image src="/solar4.jpg" layout="fill" objectFit="cover" alt="julien" quality={90} />
+          </div>
         </Carousel>
         <div className="absolute h-[40vh] w-3/6 -bottom-28 -left-28 p-4 bg-[#fff] rounded-3xl overflow-hidden">
           <div className="h-full overflow-hidden bg-[#fff] relative rounded-2xl shadow-sm">
-            <Image src="/vente01.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+            <Image src="/switch.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
           </div>
         </div>
       </div>

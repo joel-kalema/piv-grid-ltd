@@ -82,17 +82,17 @@ export default function Presentation() {
                             </p>
                             <div className="flex gap-5">
                             <div className="h-[40vh] lg:w-4/6 overflow-hidden relative rounded-xl">
-                                <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                                <Image src="/what.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
                             </div>
                             <div className="h-[40vh] lg:w-4/6 overflow-hidden relative rounded-xl">
-                                <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                                <Image src="/what1.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
                             </div>
                             </div>
                         </div>
                         <div className="lg:w-2/6 lg:p-6">
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Love What We Do</p>
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] shadow-[#fe6e004e] shadow-md rounded-xl mb-4">We Truly Care</p>
-                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] shadow-[#fe6e004e] shadow-md rounded-xl mb-10">Our Promise to You</p>
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] rounded-xl mb-4">We Love What We Do</p>
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] rounded-xl mb-4">We Truly Care</p>
+                            <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] rounded-xl mb-10">Our Promise to You</p>
                             <p className="text-xs">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
                         </div>
                     </div>

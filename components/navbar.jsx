@@ -19,12 +19,12 @@ export const navData = [
     {
         id: 2,
         title: "About",
-        link: "/louer"
+        link: "/about"
     },
     {
         id: 4,
-        title: "Contact",
-        link: "/vendre"
+        title: "Switch",
+        link: "/switch"
     }
 ]
 

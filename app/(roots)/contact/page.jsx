@@ -22,7 +22,7 @@ const Contact = () => {
         const formDatab = new FormData(formEle);
 
         fetch(
-            "https://script.google.com/macros/s/AKfycbwocoEevtbSNxucgewqbT93I2u4DlFeeoDKDVffAdq89bqAbpBRzRtQ2pnsvQn0b8B3lQ/exec",
+            // "https://script.google.com/macros/s/AKfycbwocoEevtbSNxucgewqbT93I2u4DlFeeoDKDVffAdq89bqAbpBRzRtQ2pnsvQn0b8B3lQ/exec",
             {
                 method: "POST",
                 body: formDatab
@@ -43,52 +43,50 @@ const Contact = () => {
     const handleOpen = () => setOpen(!open);
 
     return (
-        <div className="">
+        <div className="bg-[#ffffff]">
             <div className="py-40 w-5/6 mx-auto">
-                <div className="w-5/6 mx-auto flex gap-4 mb-5">
-                    <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
-                    <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
-                    <div className="h-[.5rem] w-[10rem] bg-[#c5c5c53e] rounded-md"></div>
-                </div>
-                <h1 className="text-5xl mb-20 w-5/6 mx-auto">Ask informations with PV-GRID POWER SYSTEM Ltd</h1>
-                <div className="flex gap-5 w-5/6 mx-auto">
-                    <div className="w-3/4 min-h-[60dvh] relative overflow-hidden rounded-3xl p-10">
-                        <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
-                        <div className='absolute flex gap-10 bottom-10 w-5/6'>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
-                                <IoLocation className='text-[#FE6F00] text-2xl mb-2'/>
-                                <h1 className='font-extrabold mb-2'>Our Address</h1>
+                <div className="flex gap-10 mx-auto bg-[#fff] p-4 rounded-3xl shadow-md">
+                    <div className="w-3/5 min-h-[60dvh] bg-[#e3eaee] relative overflow-hidden rounded-xl p-10 flex flex-col justify-between">
+                        <div>
+                            <div className="w-5/6 flex gap-4 mb-5">
+                                <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
+                                <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
+                                <div className="h-[.5rem] w-[10rem] bg-[#adadad3e] rounded-md"></div>
+                            </div>
+                            <h1 className="text-2xl mb-6 mx-auto">Ask informations with PV-GRID POWER SYSTEM Ltd</h1>
+                        </div>
+                        <div className='flex gap-10 '>
+                            <div className='rounded-md w-1/3 flex items-center gap-2 font-bold'>
+                                <IoLocation className='text-[#FE6F00] text-2xl mb-2' />
                                 <p>Gitega,KN 104</p>
                             </div>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
-                                <IoMdMail className='text-[#FE6F00] text-2xl mb-2'/>
-                                <h1 className='font-extrabold mb-2'>Email Us</h1>
+                            <div className='rounded-md w-1/3 flex items-center gap-2 font-bold'>
+                                <IoMdMail className='text-[#FE6F00] text-2xl mb-2' />
                                 <p>rlsgltd22@gmail.com</p>
                             </div>
-                            <div className='bg-[#fff] py-3 px-6 rounded-md w-1/3'>
+                            <div className='rounded-md w-1/3 flex items-center gap-2 font-bold'>
                                 <IoCall className='text-[#FE6F00] text-2xl mb-2' />
-                                <h1 className='font-extrabold mb-2'>Call Us</h1>
                                 <p>+250 783008373</p>
                             </div>
                         </div>
+                        <div className=" min-h-[20dvh] relative overflow-hidden rounded-2xl p-10">
+                            <Image src="/solar3.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                        </div>
                     </div>
-                    <div className="flex w-1/4 ">
-                        <Card color="transparent" bclassName="" shadow={false}>
-                            <form className="mt-8 mb-2 w-96 max-w-screen-lg bg-white rounded-xl p-4 shadow-md " onSubmit={(e) => handleSubmit(e)}>
-                                <div className="mb-1 flex flex-col gap-6">
-                                    <Input variant="outlined" label="Prénom" placeholder="Prénom" type="text" name="Prenom" />
-                                    <Input variant="outlined" label="Nom" placeholder="Nom" type="text" name="Nom" />
-                                    <Input variant="outlined" label="E-mail" placeholder="E-mail" type="mail" name="Email" />
-                                    <Input variant="outlined" label="+250 xxx xxx xxx" placeholder="Téléphone" type="number" name="Numero" />
-                                    <Textarea label="Message" name="Message" />
-                                </div>
 
-                                <Button className="mt-6" fullWidth type='submit'>
-                                    Contacter
-                                </Button>
-                            </form>
-                        </Card>
-                    </div>
+                    <form className="mt-8 mb-2 w-2/5 max-w-screen-lg bg-whitep-4 " onSubmit={(e) => handleSubmit(e)}>
+                        <div className="mb-1 flex flex-col gap-6">
+                            <Input variant="outlined" label="Prénom" placeholder="Prénom" type="text" name="Prenom" />
+                            <Input variant="outlined" label="Nom" placeholder="Nom" type="text" name="Nom" />
+                            <Input variant="outlined" label="E-mail" placeholder="E-mail" type="mail" name="Email" />
+                            <Input variant="outlined" label="+250 xxx xxx xxx" placeholder="Téléphone" type="number" name="Numero" />
+                            <Textarea label="Message" name="Message" />
+                        </div>
+
+                        <Button className="mt-6 bg-[#2a9df4]" fullWidth type='submit'>
+                            Contacter
+                        </Button>
+                    </form>
                 </div>
             </div>
 
