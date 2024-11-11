@@ -3,10 +3,12 @@
 import Image from "next/image";
 import { useState } from "react";
 import { Dialog, DialogBody, DialogFooter } from "@material-tailwind/react";
-import { FiLoader } from "react-icons/fi"; // Spinner icon
+import { FiLoader } from "react-icons/fi";
+import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
+import { IoMdClose } from "react-icons/io";
 
 export default function MasonryGridGallery() {
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState(true);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // Track loading state for images
@@ -77,7 +79,7 @@ export default function MasonryGridGallery() {
       </div>
 
       {/* Popup Modal using Material Tailwind Dialog */}
-      <Dialog open={isOpen} handler={closeModal} size="xl" className="bg-white p-4 rounded-lg">
+      <Dialog open={isOpen} handler={closeModal} size="xl" className="bg-white p-4 rounded-lg relative">
         <DialogBody className="flex items-center justify-center relative">
           {/* Show loading spinner while the image is loading */}
           {isLoading && (
@@ -86,9 +88,8 @@ export default function MasonryGridGallery() {
             </div>
           )}
           <div
-            className={`transition-opacity duration-300 h-[70vh] w-3/4 mx-auto ${
-              isTransitioning ? "opacity-0" : "opacity-100"
-            } transform ${isTransitioning ? "translate-x-10" : "translate-x-0"}`}
+            className={`transition-opacity duration-300 h-[80vh] w-3/4 mx-auto ${isTransitioning ? "opacity-0" : "opacity-100"
+              } transform ${isTransitioning ? "translate-x-10" : "translate-x-0"}`}
           >
             <Image
               src={images[selectedIndex]}
@@ -101,26 +102,19 @@ export default function MasonryGridGallery() {
             />
           </div>
         </DialogBody>
-        <DialogFooter className="flex justify-between">
-          <button
-            onClick={showPreviousImage}
-            className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
-          >
-            Previous
-          </button>
-          <button
-            onClick={closeModal}
-            className="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-700"
-          >
-            Close
-          </button>
-          <button
-            onClick={showNextImage}
-            className="px-4 py-2 bg-gray-500 text-white rounded hover:bg-gray-700"
-          >
-            Next
-          </button>
-        </DialogFooter>
+
+        <div className="absolute inset-0 items-center w-[100%] flex justify-between left-0 right-0 px-10">
+          <div onClick={showPreviousImage} className="px-4 py-4 bg-gray-500 text-white rounded-full hover:bg-gray-700 cursor-pointer">
+            <FaChevronLeft />
+          </div>
+          <div onClick={showNextImage} className="px-4 py-4 bg-gray-500 text-white rounded-full hover:bg-gray-700 cursor-pointer">
+            <FaChevronRight />
+          </div>
+        </div>
+
+        <div onClick={closeModal} className=" text-gray-500 hover:text-blue-700 text-3xl absolute top-4 right-4">
+          <IoMdClose />
+        </div>
       </Dialog>
     </div>
   );
