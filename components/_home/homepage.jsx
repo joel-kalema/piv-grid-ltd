@@ -1,6 +1,6 @@
 'use client'
 
-import { Carousel, Typography, Button } from "@material-tailwind/react";
+import { Carousel } from "@material-tailwind/react";
 import Image from "next/image";
 
 export default function Homepage() {

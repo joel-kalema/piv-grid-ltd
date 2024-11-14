@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import { useState } from "react";
-import { Dialog, DialogBody, DialogFooter } from "@material-tailwind/react";
+import { Dialog, DialogBody } from "@material-tailwind/react";
 import { FiLoader } from "react-icons/fi";
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";

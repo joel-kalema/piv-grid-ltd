@@ -4,26 +4,6 @@ import Image from "next/image";
 import MasonryGridGallery from '@/components/_home/gallery';
 import { GiTrophyCup } from "react-icons/gi";
 
-const Why = [
-    {
-        title: 'Save on Energy Costs',
-        detail: 'With rising electricity prices, switching to solar can significantly reduce your energy bills. Solar energy allows you to generate your own power, cutting down your reliance on expensive grid electricity. Our systems are designed for efficiency, providing you with the best return on investment in the long run.'
-    },
-    {
-        title: 'Eco-Friendly & Sustainable',
-        detail: "Every kilowatt of solar energy generated helps reduce greenhouse gas emissions and contributes to a healthier planet. By installing a solar energy system, you're taking a step toward reducing your carbon footprint and supporting the global shift to renewable energy."
-    },
-    {
-        title: 'Increased Property Value',
-        detail: 'Investing in solar energy not only saves you money but also increases the value of your property. Solar-powered homes are in demand, and potential buyers are more willing to pay a premium for homes that come equipped with energy-saving features.'
-    },
-    {
-        title: 'Energy Independence',
-        detail: 'Tired of unpredictable grid outages? Solar energy gives you the freedom to generate your own power, ensuring you always have electricity, even in remote areas or during grid failures. Pairing your solar system with our automatic change-over switch guarantees continuous power, rain or shine.'
-    }
-]
-
-
 export default function Louer() {
     return (
         <div className="pt-20 ">
@@ -70,7 +50,7 @@ export default function Louer() {
                 <div className="w-[5rem] h-[5rem] border mx-auto rounded-[50%] flex justify-center items-center shadow-md bg-[#fff] relative z-20 ">
                     <GiTrophyCup className=" drop-shadow-lg text-4xl" />
                 </div>
-                <p className="italic text-xl text-center w-1/2 mx-auto border-t pt-6 -mt-4 ">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
+                <p className="italic text-xl text-center w-1/2 mx-auto border-t pt-6 -mt-4 ">We&apos;re a trusted local Electrical Company. We &apos;ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
             </div>
 
             <div className="flex w-3/4 mx-auto gap-10 my-28">

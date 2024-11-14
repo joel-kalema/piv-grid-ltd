@@ -25,7 +25,7 @@ export default function SwitchComponent() {
                     <p>
                         Imagine never having to worry about unexpected power outages again. Our advanced automatic
                         change-over switch guarantees uninterrupted power by seamlessly transitioning from grid power
-                        to solar energy. It’s designed to make life easier, offering convenience, reliability, and
+                        to solar energy. It&apos;s designed to make life easier, offering convenience, reliability, and
                         peace of mind—especially in regions prone to power cuts.
                     </p>
                     <p className="mt-4">
@@ -65,7 +65,7 @@ export default function SwitchComponent() {
                     <h2 className="text-4xl font-semibold mb-6 bg-[#f9f9f9] text-[#898989] shadow-sm rounded-xl p-4">What Our Customers Say</h2>
                     <div className="flex justify-center gap-6">
                         <div className="w-1/2 bg-[#fe6e0020] rounded-xl shadow-sm p-8">
-                            <p className="italic text-lg mb-10">"Switching to solar energy was the best decision I&apos;ve made. It reduced my monthly bills and I feel proud to be contributing to a cleaner planet. The transition to solar was smooth, and we&apos;re already seeing a significant decrease in energy costs. It&apos;s great to know we&apos;re doing something good for the environment."</p>
+                            <p className="italic text-lg mb-10">&rdquo;Switching to solar energy was the best decision I&apos;ve made. It reduced my monthly bills and I feel proud to be contributing to a cleaner planet. The transition to solar was smooth, and we&apos;re already seeing a significant decrease in energy costs. It&apos;s great to know we&apos;re doing something good for the environment.&rdquo;</p>
                             <div className="flex gap-4 items-center">
                                 <div className="h-10 w-10 rounded-full relative overflow-hidden">
                                     <Image src="/switch.jpg" layout="fill" objectFit="cover" alt="Product Image" quality={100} />
@@ -74,7 +74,7 @@ export default function SwitchComponent() {
                             </div>
                         </div>
                         <div className="w-1/2 bg-[#f9f9f9] rounded-xl shadow-sm p-8">
-                            <p className="italic text-lg mb-10">"The installation was quick, and the savings have been substantial. I&apos;m now energy-independent and love the peace of mind that comes with it. The team was professional and knowledgeable throughout the entire process. Solar has truly changed my energy consumption and I couldn&apos;t be happier."</p>
+                            <p className="italic text-lg mb-10">&rdquo;The installation was quick, and the savings have been substantial. I&apos;m now energy-independent and love the peace of mind that comes with it. The team was professional and knowledgeable throughout the entire process. Solar has truly changed my energy consumption and I couldn&apos;t be happier.&rdquo;</p>
                             <div className="flex gap-4 items-center">
                                 <div className="h-10 w-10 rounded-full relative overflow-hidden">
                                     <Image src="/switch.jpg" layout="fill" objectFit="cover" alt="Product Image" quality={100} />

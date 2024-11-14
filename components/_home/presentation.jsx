@@ -1,7 +1,6 @@
 'use client'
 
 import Image from "next/image";
-import Link from "next/link";
 import { IoIosCheckmarkCircle } from "react-icons/io";
 
 const Why = [
@@ -44,8 +43,8 @@ export default function Presentation() {
                 </div>
                 <h1 className="text-5xl mb-20 w-5/6 mx-auto">Why Choose Solar Energy?</h1>
                 <div className="w-5/6 mx-auto gap-10 flex flex-wrap justify-between mb-40">
-                    {Why.map((item) => (
-                        <div className="w-[48%] bg-[#ffffff0d] p-10 rounded-3xl">
+                    {Why.map((item, index) => (
+                        <div key={index} className="w-[48%] bg-[#ffffff0d] p-10 rounded-3xl">
                             <h1 className="text-xl font-bold mb-4">{item.title}</h1>
                             <p className="text-[#ffffffc6]">{item.detail}</p>
                         </div>
