@@ -36,10 +36,6 @@ const Navbar = () => {
 
     const navToggle = () => (active === 'nav_active' ? setActive('nav_close') : setActive('nav_active'));
 
-    const content = (title) => {
-        setColor([title])
-    }
-
     function setFixed() {
         window.scrollY >= 10 ? setFix(true) : setFix(false)
     }
