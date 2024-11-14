@@ -3,7 +3,6 @@
 import Image from "next/image";
 import { Typography } from "@material-tailwind/react";
 import { AiOutlineLogin } from "react-icons/ai";
-import { FiArrowUpRight } from "react-icons/fi";
 import { FaPhone } from "react-icons/fa6";
 import { IoMdMail } from "react-icons/io";
 import Link from "next/link";
@@ -18,28 +17,25 @@ export default function Footer() {
         <div className="lg:rounded-[2rem] relative z-20">
             <footer className="relative w-full bg-[#161616] text-[#d0d0d0]">
                 <div className="mx-auto w-full max-w-7xl lg:px-8">
-                    <div className="lg:flex justify-between items-center gap-4 py-10 border-t border-[#6c6c6c]">
+                    <div className="lg:flex justify-between items-center gap-4 pb-10 pt-20">
                         <div className="2/4  mb-12 lg:mb-0">
-                            <Image src='/logo.png' height={60} width={200} alt="Eleka logo" className='md:w-14 lg:w-40 mb-4' />
-                            <div>
-                                <p className="text-sm w-3/4 mb-6 ">Power Your Life with Clean Energy – Discover the Benefits of Solar Today!</p>
-                                <p className="lg:text-sm w-2/4 mb-1 flex items-center gap-2"><FaPhone className="text-[#2a9df4] text-2xl"/>+250 783008373</p>
-                                <Link href="mailto:rlsgltd22@gmail.com" className="lg:text-sm lg:w-2/4 mb-2 flex items-center gap-2"><IoMdMail className="text-[#2a9df4] text-2xl"/>rlsgltd22@gmail.com</Link>
-                                <div className=" flex border border-[#d0d0d04d] p-2 rounded-md">
-                                    <div className="w-4/6 py-1">Écrivez votre email ici</div>
-                                    <div className="w-2/6 bg-[#2a9df4] rounded-md py-1 px-2 flex justify-between items-center">
-                                        Soumettre <AiOutlineLogin />
-                                    </div>
-                                </div>
+                            <div className="p-4 w-48 h-48 flex justify-center items-center mb-6 bg-white rounded-full">
+                                <Image src='/logo.png' height={60} width={100} alt="Eleka logo" className='md:w-14 lg:w-40 mb-4' />
                             </div>
+                            <p className="text-sm w-3/4 mb-6 ">Power Your Life with Clean Energy – Discover the Benefits of Solar Today!</p>
+
                         </div>
 
                         <div className="flex lg:w-2/4 justify-between gap-4">
-                            <div className="flex lg:w-3/4 gap-5">
-                                <MdLocationOn className="text-6xl text-[#2a9df4]"/>
-                                <div>
-                                    <h1 className=" font-extrabold mb-1">KIGALI :</h1>
-                                    <p className="text-sm text-[#868686] mb-2">Gitega,KN 104</p>
+                            <div className="w-full">
+                                <p className="lg:text-sm mb-3 flex items-center gap-2"><MdLocationOn className="text-[#2a9df4] text-2xl" />KIGALI :Gitega,KN 104</p>
+                                <p className="lg:text-sm mb-3 flex items-center gap-2"><FaPhone className="text-[#2a9df4] text-xl" />+250 783008373</p>
+                                <Link href="mailto:rlsgltd22@gmail.com" className="lg:text-sm mb-10 flex items-center gap-2"><IoMdMail className="text-[#2a9df4] text-xl" />rlsgltd22@gmail.com</Link>
+                                <div className=" flex border border-[#d0d0d04d] py-2 pl-4 pr-2 rounded-full text-[#656565] bg-white w-4/6">
+                                    <div className="w-4/6 py-1">Write your email here</div>
+                                    <div className="w-2/6 bg-[#FE6F00] text-white rounded-full py-1 px-2 flex justify-between items-center">
+                                        Soumettre <AiOutlineLogin />
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -72,10 +68,10 @@ export default function Footer() {
                                 </svg>
                             </Typography>
                             <Typography as="a" href="https://cd.linkedin.com/company/kowach-corporation" target="_blank" className="opacity-80 transition-opacity hover:opacity-100">
-                                <FaLinkedinIn className="h-5 w-5"/>
+                                <FaLinkedinIn className="h-5 w-5" />
                             </Typography>
                             <Typography as="a" href="https://www.tiktok.com/@qavah.group" target="_blank" className="opacity-80 transition-opacity hover:opacity-100">
-                                <FaTiktok className="h-5 w-5"/>
+                                <FaTiktok className="h-5 w-5" />
                             </Typography>
                         </div>
                     </div>

@@ -8,7 +8,7 @@ import { FaChevronRight, FaChevronLeft } from "react-icons/fa6";
 import { IoMdClose } from "react-icons/io";
 
 export default function MasonryGridGallery() {
-  const [isOpen, setIsOpen] = useState(true);
+  const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
   const [isLoading, setIsLoading] = useState(true); // Track loading state for images
@@ -112,7 +112,7 @@ export default function MasonryGridGallery() {
           </div>
         </div>
 
-        <div onClick={closeModal} className=" text-gray-500 hover:text-blue-700 text-3xl absolute top-4 right-4">
+        <div onClick={closeModal} className=" text-gray-500 hover:text-blue-700 text-3xl absolute top-4 right-4 cursor-pointer">
           <IoMdClose />
         </div>
       </Dialog>

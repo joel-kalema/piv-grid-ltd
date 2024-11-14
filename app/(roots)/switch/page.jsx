@@ -4,7 +4,7 @@ import { FaRegDotCircle } from "react-icons/fa";
 import Image from 'next/image';
 import Link from "next/link";
 import FeaturedImageGallery from './_component/pictures'
-import { FaArrowRightLong } from "react-icons/fa6";
+import Questions from "./_component/questions";
 
 export default function SwitchPage() {
     return (
@@ -50,10 +50,6 @@ export default function SwitchPage() {
                         <li className="flex items-center gap-2 mb-2"><FaRegDotCircle className="drop-shadow-md text-[#2a9df4]" /> Remote Monitoring and Control</li>
                         <li className="flex items-center gap-2 mb-10"><FaRegDotCircle className="drop-shadow-md text-[#2a9df4]" /> Built-in Safety Mechanisms</li>
                     </ul>
-
-                    <Link href="#" className="text-[#FE6F00] font-bold flex items-center gap-2 hover:gap-4 hover:font-extrabold transition duration-300">
-                        Learn More <FaArrowRightLong />
-                    </Link>
                 </div>
             </div>
 
@@ -62,43 +58,8 @@ export default function SwitchPage() {
                 <FeaturedImageGallery />
             </div>
             
-            {/* Testimonials Section */}
-            <div className="bg-[#f9fafb] p-16 mt-20 rounded-2xl text-center shadow-xl">
-                <h2 className="text-4xl font-bold text-[#414141] mb-4">What Our Clients Say</h2>
-                <div className="flex justify-around mt-10">
-                    <div className="max-w-xs text-left">
-                        <p className="text-lg font-semibold mb-2">"Reliable, easy to use, and has been a lifesaver during power outages. Highly recommend!"</p>
-                        <span className="text-[#555]">– Alex M., Business Owner</span>
-                    </div>
-                    <div className="max-w-xs text-left">
-                        <p className="text-lg font-semibold mb-2">"Installed it last year, and I’m saving a lot on energy costs. A smart investment!"</p>
-                        <span className="text-[#555]">– Sarah T., Homeowner</span>
-                    </div>
-                    <div className="max-w-xs text-left">
-                        <p className="text-lg font-semibold mb-2">"Our operations no longer face interruptions. RLACS is the future of power management."</p>
-                        <span className="text-[#555]">– John D., Facility Manager</span>
-                    </div>
-                </div>
-            </div>
-
             {/* FAQ Section */}
-            <div className="mt-20 w-5/6 mx-auto">
-                <h2 className="text-4xl font-bold text-center mb-8">Frequently Asked Questions</h2>
-                <div className="space-y-8">
-                    <div>
-                        <h3 className="font-bold text-lg">1. How does the automatic change-over switch work?</h3>
-                        <p>Our switch detects power outages and instantly transfers the load to a solar energy system, ensuring constant power without manual intervention.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg">2. Is it compatible with any solar setup?</h3>
-                        <p>Yes, RLACS is designed to integrate smoothly with any existing solar setup, providing you with maximum flexibility.</p>
-                    </div>
-                    <div>
-                        <h3 className="font-bold text-lg">3. How long does installation take?</h3>
-                        <p>Installation is straightforward and can be completed within a few hours, depending on your setup.</p>
-                    </div>
-                </div>
-            </div>
+            <Questions />
             
             {/* Final CTA */}
             <div className="bg-[#2a9df4] text-white p-16 mt-20 rounded-2xl text-center shadow-xl">

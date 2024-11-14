@@ -50,7 +50,7 @@ export default function SwitchComponent() {
                     <p className="flex items-center gap-2 mb-2"><FaRegDotCircle className="drop-shadow-md text-[#2a9df4]" /> Easy Installation and Maintenance</p>
                     <p className="flex items-center gap-2 mb-2"><FaRegDotCircle className="drop-shadow-md text-[#2a9df4]" /> Compatible with Any Solar Setup</p>
                     <p className="flex items-center gap-2 mb-10"><FaRegDotCircle className="drop-shadow-md text-[#2a9df4]" /> Designed for Safety</p>
-                    <Link href="#" className="text-[#FE6F00] font-bold flex items-center gap-2 hover:gap-4 hover:font-extrabold transition duration-300">Contact Us <FaArrowRightLong /></Link>
+                    <Link href="/switch" className="text-[#FE6F00] font-bold flex items-center gap-2 hover:gap-4 hover:font-extrabold transition duration-300">Contact Us <FaArrowRightLong /></Link>
                 </div>
             </div>
 
@@ -61,42 +61,35 @@ export default function SwitchComponent() {
             <div className="mt-40">
                 {/* New Section: Customer Testimonials */}
                 {/* New Section: Customer Testimonials */}
-                <div className="my-20">
-                    <h2 className="text-4xl font-semibold text-center mb-10">What Our Customers Say</h2>
-                    <div className="flex justify-center gap-16">
-                        <div className="w-1/3 bg-[#f9f9f9] rounded-xl shadow-md p-8">
-                            <p className="italic text-lg">"Switching to solar energy was the best decision I've made. It reduced my monthly bills and I feel proud to be contributing to a cleaner planet."</p>
-                            <p className="mt-4 text-right font-semibold">- John Doe</p>
+                <div className="my-40 mx-auto">
+                    <h2 className="text-4xl font-semibold mb-6 bg-[#f9f9f9] text-[#898989] shadow-sm rounded-xl p-4">What Our Customers Say</h2>
+                    <div className="flex justify-center gap-6">
+                        <div className="w-1/2 bg-[#fe6e0020] rounded-xl shadow-sm p-8">
+                            <p className="italic text-lg mb-10">"Switching to solar energy was the best decision I&apos;ve made. It reduced my monthly bills and I feel proud to be contributing to a cleaner planet. The transition to solar was smooth, and we&apos;re already seeing a significant decrease in energy costs. It&apos;s great to know we&apos;re doing something good for the environment."</p>
+                            <div className="flex gap-4 items-center">
+                                <div className="h-10 w-10 rounded-full relative overflow-hidden">
+                                    <Image src="/switch.jpg" layout="fill" objectFit="cover" alt="Product Image" quality={100} />
+                                </div>
+                                <p className="font-semibold">- John Doe</p>
+                            </div>
                         </div>
-                        <div className="w-1/3 bg-[#f9f9f9] rounded-xl shadow-md p-8">
-                            <p className="italic text-lg">"The installation was quick, and the savings have been substantial. I’m now energy-independent and love the peace of mind that comes with it."</p>
-                            <p className="mt-4 text-right font-semibold">- Jane Smith</p>
-                        </div>
-                        <div className="w-1/3 bg-[#f9f9f9] rounded-xl shadow-md p-8">
-                            <p className="italic text-lg">"The transition to solar was smooth, and we’re already seeing a significant decrease in energy costs. It's great to know we’re doing something good for the environment."</p>
-                            <p className="mt-4 text-right font-semibold">- Samuel Green</p>
-                        </div>
-                        <div className="w-1/3 bg-[#f9f9f9] rounded-xl shadow-md p-8">
-                            <p className="italic text-lg">"I'm thrilled with the results! The solar system is efficient, reliable, and the savings are helping me reinvest in other home improvements. Highly recommended!"</p>
-                            <p className="mt-4 text-right font-semibold">- Emily Davis</p>
-                        </div>
-                        <div className="w-1/3 bg-[#f9f9f9] rounded-xl shadow-md p-8">
-                            <p className="italic text-lg">"The team was professional and knowledgeable throughout the entire process. Solar has truly changed my energy consumption and I couldn’t be happier."</p>
-                            <p className="mt-4 text-right font-semibold">- Michael Lee</p>
+                        <div className="w-1/2 bg-[#f9f9f9] rounded-xl shadow-sm p-8">
+                            <p className="italic text-lg mb-10">"The installation was quick, and the savings have been substantial. I&apos;m now energy-independent and love the peace of mind that comes with it. The team was professional and knowledgeable throughout the entire process. Solar has truly changed my energy consumption and I couldn&apos;t be happier."</p>
+                            <div className="flex gap-4 items-center">
+                                <div className="h-10 w-10 rounded-full relative overflow-hidden">
+                                    <Image src="/switch.jpg" layout="fill" objectFit="cover" alt="Product Image" quality={100} />
+                                </div>
+                                <p className="font-semibold">- Jane Smith</p>
+                            </div>
                         </div>
                     </div>
                 </div>
 
 
 
-                <div className="mx-auto w-1/3 my-20">
-                    <div className="w-5/6 mx-auto flex gap-4 mb-5">
-                        <div className="h-[.5rem] w-[1rem] bg-[#FE6F00] rounded-md"></div>
-                        <div className="h-[.5rem] w-[5rem] bg-[#2a9df4] rounded-md"></div>
-                        <div className="h-[.5rem] w-[10rem] bg-[#010f4344] rounded-md"></div>
-                    </div>
-                    <h1 className="text-5xl w-5/6 mb-20 mx-auto">Our Trusted Partners</h1>
-                    <p className="text-lg mb-10 text-center">We work with leading organizations dedicated to advancing sustainable energy solutions and providing the best technology to our clients.</p>
+                <div className="mx-auto w-2/3 text-center my-20">
+                    <h1 className="text-5xl w-5/6 mb-10 mx-auto">Our Trusted Partners</h1>
+                    <p className="text-lg mb-10 w-3/4 mx-auto">We work with leading organizations dedicated to advancing sustainable energy solutions and providing the best technology to our clients.</p>
                 </div>
 
                 {/* Partner Logos */}

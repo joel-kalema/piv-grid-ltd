@@ -77,7 +77,7 @@ export default function Presentation() {
                     <div className="flex gap-20 mx-auto mt-20 justify-between">
                         <div className="w-4/6 bg-[#fff] p-6 rounded-xl">
                             <h1 className="font-extrabold text-xl my-4">Expert Instalation</h1>
-                            <p className="mb-4 text-[#999999] text-sm w-3/4">Benefit from our team's wealth of strategic expertise. We Craft strategies that align with your
+                            <p className="mb-4 text-[#999999] text-sm w-3/4">Benefit from our team&apos;s wealth of strategic expertise. We Craft strategies that align with your
                                 businnes objectves.
                             </p>
                             <div className="flex gap-5">
@@ -93,7 +93,7 @@ export default function Presentation() {
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] rounded-xl mb-4">We Love What We Do</p>
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] rounded-xl mb-4">We Truly Care</p>
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] rounded-xl mb-10">Our Promise to You</p>
-                            <p className="text-xs">We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
+                            <p className="text-xs">We&apos;re a trusted local Electrical Company. We &apos;ve been serving a variety of commercial, residential,and industrial customers since 2010.</p>
                         </div>
                     </div>
                 </div>

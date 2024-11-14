@@ -1,42 +1,58 @@
 import React from "react";
+import Image from "next/image";
+
+
 export default function FeaturedImageGallery() {
   const data = [
     {
-      imgelink:
-        "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
+      imgelink: "/switch/switch1.jpg"
     },
     {
-      imgelink:
-        "https://images.unsplash.com/photo-1432462770865-65b70566d673?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80",
+      imgelink: "/switch/switch2.jpg"
     },
     {
-      imgelink:
-        "https://images.unsplash.com/photo-1493246507139-91e8fad9978e?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2940&q=80",
+      imgelink: "/switch/switch3.jpeg"
     },
     {
-      imgelink:
-        "https://images.unsplash.com/photo-1518623489648-a173ef7824f3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2762&q=80",
+      imgelink: "/switch/switch4.jpeg"
     },
     {
-      imgelink:
-        "https://images.unsplash.com/photo-1682407186023-12c70a4a35e0?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2832&q=80",
+      imgelink: "/switch/switch5.jpeg"
+    },
+    {
+      imgelink: "/switch/switch6.jpg"
+    },
+    {
+      imgelink: "/switch/switch7.jpeg"
     },
   ];
- 
-  const [active, setActive] = React.useState(
-    "https://images.unsplash.com/photo-1499696010180-025ef6e1a8f9?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1470&q=80",
-  );
- 
+
+  const [active, setActive] = React.useState("/switch/switch1.jpg");
+
   return (
-    <div className="grid gap-4">
-      <div>
-        <img
-          className="h-auto w-full max-w-full rounded-lg object-cover object-center md:h-[480px]"
+    <div className="w-5/6 mx-auto">
+      <h1></h1>
+      <div className="h-[65vh] overflow-hidden relative w-full max-w-full rounded-3xl object-cover object-center mb-10 bg-[#c7c7c7]">
+        <Image
           src={active}
-          alt=""
+          layout="fill"
+          className="relative z-20"
+          objectFit="contain"
+          alt="Selected"
+          quality={100}
         />
+
+        <Image
+          src={active}
+          className="absolute top-0 z-10 blur-[10rem]"
+          layout="fill"
+          objectFit="cover"
+          alt="Selected"
+          quality={40}
+        />
+
       </div>
-      <div className="grid grid-cols-5 gap-4">
+      <div className="flex gap-4 justify-center">
         {data.map(({ imgelink }, index) => (
           <div key={index}>
             <img
