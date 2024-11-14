@@ -84,7 +84,7 @@ export default function Presentation() {
                                 <Image src="/what.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
                             </div>
                             <div className="h-[40vh] lg:w-4/6 overflow-hidden relative rounded-xl">
-                                <Image src="/what1.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
+                                <Image src="/joel.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />
                             </div>
                             </div>
                         </div>
