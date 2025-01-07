@@ -11,7 +11,7 @@ export default function MasonryGridGallery() {
   const [isOpen, setIsOpen] = useState(false);
   const [selectedIndex, setSelectedIndex] = useState(0);
   const [isTransitioning, setIsTransitioning] = useState(false);
-  const [isLoading, setIsLoading] = useState(true); // Track loading state for images
+  const [isLoading, setIsLoading] = useState(true);
 
   const images = [
     "/pics/pic9.jpg",
@@ -29,7 +29,7 @@ export default function MasonryGridGallery() {
 
   const openModal = (index) => {
     setSelectedIndex(index);
-    setIsLoading(true); // Start loading when modal opens
+    setIsLoading(true);
     setIsOpen(true);
   };
 
@@ -39,7 +39,7 @@ export default function MasonryGridGallery() {
 
   const showNextImage = () => {
     setIsTransitioning(true);
-    setIsLoading(true); // Start loading when switching images
+    setIsLoading(true);
     setTimeout(() => {
       setSelectedIndex((prevIndex) => (prevIndex + 1) % images.length);
       setIsTransitioning(false);
@@ -48,7 +48,7 @@ export default function MasonryGridGallery() {
 
   const showPreviousImage = () => {
     setIsTransitioning(true);
-    setIsLoading(true); // Start loading when switching images
+    setIsLoading(true);
     setTimeout(() => {
       setSelectedIndex((prevIndex) => (prevIndex - 1 + images.length) % images.length);
       setIsTransitioning(false);
@@ -78,10 +78,9 @@ export default function MasonryGridGallery() {
         ))}
       </div>
 
-      {/* Popup Modal using Material Tailwind Dialog */}
+    
       <Dialog open={isOpen} handler={closeModal} size="xl" className="bg-white p-4 rounded-lg relative">
         <DialogBody className="flex items-center justify-center relative">
-          {/* Show loading spinner while the image is loading */}
           {isLoading && (
             <div className="absolute inset-0 flex items-center justify-center bg-white bg-opacity-70 z-10">
               <FiLoader className="animate-spin text-4xl text-blue-500" />
@@ -98,7 +97,7 @@ export default function MasonryGridGallery() {
               objectFit="contain"
               alt="Selected"
               quality={100}
-              onLoad={() => setIsLoading(false)} // Stop loading when image is loaded
+              onLoad={() => setIsLoading(false)}
             />
           </div>
         </DialogBody>

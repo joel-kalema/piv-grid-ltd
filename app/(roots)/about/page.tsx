@@ -35,12 +35,6 @@ export default function Louer() {
                         and lighting process, RLSG Ltd members came up with the idea to give their
                         contribution in the promotion of clean energy in order to save our environment
                         and to increase the quality of life style of Rwandans.</p>
-
-                    {/* <p>We 're a trusted local Electrical Company. We ’ve been serving a variety of commercial,residential,and industrial customers since 2010.</p>
-
-                    <div>
-                        <IoLogoYoutube />
-                    </div> */}
                 </div>
                 <div className="hidden lg:block h-[40rem] overflow-hidden w-2/6 relative rounded-xl">
                     <Image src="/about.jpg" layout="fill" objectFit="cover" alt="bay" quality={100} />

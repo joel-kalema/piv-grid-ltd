@@ -29,7 +29,7 @@ export default function Questions() {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
-    <div className="mx-4 lg:mx-auto my-40 bg-[#ffffff] flex gap-20 shadow-xl px-6 lg:px-10 py-10 lg:py-12 rounded-2xl">
+    <div className="mx-4 lg:mx-auto my-40 bg-[#ffffff] flex gap-20 shadow-xl px-6 lg:px-10 py-10 lg:py-12 rounded-2xl w-5/6">
       <div className="lg:w-4/6">
         <h1 className="font-extrabold text-2xl lg:text-4xl mb-10">Frequently Asked Questions</h1>
         <div>

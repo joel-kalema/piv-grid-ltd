@@ -2,9 +2,12 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+    color: #2a2a2a;
+}
+
 .nav_active {
     height: 100dvh;
-   
     left: 0;
     top: 0;
     position: fixed;

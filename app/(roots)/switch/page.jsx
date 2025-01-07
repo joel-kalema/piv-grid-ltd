@@ -53,18 +53,15 @@ export default function SwitchPage() {
                 </div>
             </div>
 
-            {/* Image Gallery */}
             <div className="mt-40 w-5/6 mx-auto">
                 <FeaturedImageGallery />
             </div>
             
-            {/* FAQ Section */}
             <Questions />
             
-            {/* Final CTA */}
             <div className="bg-[#2a9df4] text-white p-16 mt-20 rounded-2xl text-center shadow-xl">
                 <h2 className="text-4xl font-bold mb-4">Ready to Experience Uninterrupted Power?</h2>
-                <p className="text-lg mb-8">Get in touch to learn how our automatic change-over switch can bring stability and reliability to your power setup. Our team is here to answer questions and guide you through every step.</p>
+                <p className="text-lg mb-8 w-5/6 mx-auto my-10">Get in touch to learn how our automatic change-over switch can bring stability and reliability to your power setup. Our team is here to answer questions and guide you through every step.</p>
                 <Link href="/contact" className="bg-[#FE6F00] text-white py-3 px-8 rounded-full font-bold shadow-lg hover:bg-[#e66500] transition duration-300">Contact Us Today</Link>
             </div>
         </div>
