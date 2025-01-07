@@ -92,7 +92,7 @@ export default function Presentation() {
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#FE6F00] rounded-xl mb-4">We Love What We Do</p>
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#2a9df4] rounded-xl mb-4">We Truly Care</p>
                             <p className="text-xl text-[#fff] font-extrabold py-4 px-10 bg-[#0b2035] rounded-xl mb-10">Our Promise to You</p>
-                            <p className="text-xs">We&apos;re a trusted local Electrical Company. We &apos;ve been serving a variety of commercial, residential,and industrial customers since 2010.</p>
+                            <p className="text-xs">We&apos;re a trusted local Electrical Company. We&apos;ve been serving a variety of commercial, residential,and industrial customers since 2010.</p>
                         </div>
                     </div>
                 </div>

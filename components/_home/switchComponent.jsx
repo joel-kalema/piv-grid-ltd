@@ -6,6 +6,8 @@ import { FaRegDotCircle } from "react-icons/fa";
 import { FaArrowRightLong } from "react-icons/fa6";
 import MasonryGridGallery from "./gallery";
 
+const images = ["/logos/isuzu.png", "/logos/reg.png", "/logos/ur.jpg", "/logos/grid.png"]
+
 export default function SwitchComponent() {
     return (
         <div className="py-40 w-5/6 mx-auto">
@@ -92,19 +94,15 @@ export default function SwitchComponent() {
                     <p className="text-lg mb-10 w-3/4 mx-auto">We work with leading organizations dedicated to advancing sustainable energy solutions and providing the best technology to our clients.</p>
                 </div>
 
-                {/* Partner Logos */}
-                <div className="flex gap-8 justify-center">
-                    <div className="h-[12vh] w-1/5 relative">
-                        <Image src="/logos/isuzu.png" layout="fill" objectFit="cover" alt="Isuzu Logo" quality={100} />
-                    </div>
-                    <div className="h-[10vh] w-1/5 relative">
-                        <Image src="/logos/reg.png" layout="fill" objectFit="cover" alt="REG Logo" quality={100} />
-                    </div>
-                    <div className=" w-1/5 relative">
-                        <Image src="/logos/ur.jpg" layout="fill" objectFit="cover" alt="UR Logo" quality={100} />
-                    </div>
-                    <div className=" w-1/5 relative">
-                        <Image src="/logos/grid.png" layout="fill" objectFit="cover" alt="Grid Logo" quality={100} />
+                <div className="slider" reverse="true" style={{
+                    "--width": "300px",
+                    "--height": "150px",
+                    "--quantity": 4,
+                }}>
+                    <div className="list">
+                        {images.map((image, index) => (
+                            <div key={index} className="item items-center" style={{ "--position": index }}><Image src={image} width={700} height={400} quality={100} alt="image" className="mx-auto rounded-lg" /></div>
+                        ))}
                     </div>
                 </div>
 
